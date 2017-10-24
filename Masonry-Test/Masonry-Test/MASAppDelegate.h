@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MASAppDelegate.h
 //  Masonry-Test
 //
 //  Created by yuntong on 2017/10/24.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-
+@interface MASAppDelegate : UIResponder <UIApplicationDelegate>
+@property (nonatomic, strong) UIWindow *window;
 @end
-

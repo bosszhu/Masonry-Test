@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MASExampleListViewController.h
 //  Masonry-Test
 //
 //  Created by yuntong on 2017/10/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MASExampleListViewController : UITableViewController
 
 @end
-
