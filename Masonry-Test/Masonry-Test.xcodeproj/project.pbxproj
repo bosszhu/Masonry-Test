@@ -106,6 +106,7 @@
 		5C5B1AAF1F9F1C29000DC2F4 /* Masonry-Test */ = {
 			isa = PBXGroup;
 			children = (
+				5C5B1ABE1F9F1C29000DC2F4 /* Info.plist */,
 				5C5B1AE31F9F2850000DC2F4 /* MASAppDelegate.h */,
 				5C5B1AE41F9F2850000DC2F4 /* MASAppDelegate.m */,
 				5C5B1AE61F9F29FE000DC2F4 /* Controllers */,
@@ -137,7 +138,6 @@
 		5C5B1AE21F9F27E7000DC2F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C5B1ABE1F9F1C29000DC2F4 /* Info.plist */,
 				5C5B1ABF1F9F1C29000DC2F4 /* main.m */,
 			);
 			path = "Supporting Files";
