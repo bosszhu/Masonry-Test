@@ -8,6 +8,7 @@
 
 #import "MASExampleListViewController.h"
 
+static NSString *const cellReuseIdentifier = @"cellReuseIdentifier";
 @interface MASExampleListViewController ()
 
 @end
@@ -17,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"举例列表";
-    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellReuseIdentifier];
 }
 
 
@@ -29,10 +30,8 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseIdentifier forIndexPath:indexPath];
+    cell.textLabel.text = @"测试";
     return cell;
 }
 @end
