@@ -1,0 +1,26 @@
+//
+//  ZLMasonryPrefixHeader.pch
+//  Masonry-Test
+//
+//  Created by yuntong on 2017/10/26.
+//  Copyright © 2017年 yuntong. All rights reserved.
+//
+
+#import <Availability.h>//判断版本
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+#endif
